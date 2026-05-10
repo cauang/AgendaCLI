@@ -4,13 +4,27 @@
     "email": "cauangomes.b@gmail.com",
     "id": 1,
     "name": "Cauan gomes",
-    "phone": "85"
+    "phone": "85999999999"
   },
   {
-    "company": "",
-    "email": "",
+    "company": "Universidade de fortaleza",
+    "email": "cauangomes.b@unifor.com",
     "id": 2,
     "name": "cauan",
-    "phone": ""
+    "phone": "85123456789"
+  },
+  {
+    "company": "Universidade de fortaleza",
+    "email": "isa@unifor.com",
+    "id": 2,
+    "name": "Isa",
+    "phone": "85123456789"
+  },
+  {
+    "company": "Universidade de fortaleza",
+    "email": "jv@unifor.com",
+    "id": 2,
+    "name": "Joao Victor",
+    "phone": "85123456789"
   }
 ]
