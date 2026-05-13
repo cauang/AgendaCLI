@@ -22,7 +22,6 @@ defmodule AgendaCli.Contacts do
     maior_id + 1
   end
 
-  # --- LISTAR ---
   @spec list(any()) :: :ok
   def list(state) do
     IO.puts("ID | NOME | EMPRESA | TELEFONE | EMAIL")
@@ -33,7 +32,6 @@ defmodule AgendaCli.Contacts do
     IO.puts("---------------------------------------------")
   end
 
-  # --- MOSTRAR (SHOW) ---
   def show(state, id_str) do
     id = String.to_integer(id_str)
     IO.puts("---------------------------------------------")
@@ -55,7 +53,6 @@ defmodule AgendaCli.Contacts do
     Enum.reject(state, fn c -> c["id"] == id end)
   end
 
-  # --- EDITAR ---
   def edit(state, id_str, atualizacoes) do
     id = String.to_integer(id_str)
 
@@ -74,7 +71,6 @@ defmodule AgendaCli.Contacts do
     end)
   end
 
-  # --- BUSCAR (SEARCH) ---
   def search(state, {:name, valor}), do: buscar_por(state, "name", valor)
   def search(state, {:phone, valor}), do: buscar_por(state, "phone", valor)
   def search(state, {:email, valor}), do: buscar_por(state, "email", valor)
